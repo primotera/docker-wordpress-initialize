@@ -46,4 +46,4 @@ if ! $(wp core is-installed); then
     # make everything owned by www-data
     chown -R xfs:xfs . || true
 fi
-echo "$_SERVER['HTTP_HOST'] = $_SERVER['HTTP_X_FORWARDED_HOST'];" >> /var/www/html/wp-config.php
+#echo "$_SERVER['HTTP_HOST'] = $_SERVER['HTTP_X_FORWARDED_HOST'];" >> /var/www/html/wp-config.php
